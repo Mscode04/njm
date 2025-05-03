@@ -24,6 +24,12 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let link = document.getElementById("admissions-link");
+        link.href = "course.html"; // Ensures correct navigation
+      });
+</script>
 
 <body>
     <!-- Topbar Start -->
@@ -98,7 +104,7 @@
                         <div class="navbar-nav py-0">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="course.html" class="nav-item nav-link">Programs</a>
+                            <a href="course.html" class="nav-item nav-link"  id="admissions-link">Programs</a>
                             <a href="events.html" class="nav-item nav-link">Events</a>
                             <!-- <a href="teacher.html" class="nav-item nav-link">Teachers</a> -->
                             <div class="nav-item dropdown">
