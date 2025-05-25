@@ -57,6 +57,10 @@
         link.href = "gallery.html"; // Ensures correct navigation
       });
     document.addEventListener("DOMContentLoaded", function () {
+        let link = document.getElementById("news-link");
+        link.href = "news.html"; // Ensures correct navigation
+      });
+    document.addEventListener("DOMContentLoaded", function () {
         let link = document.getElementById("about-link");
         link.href = "about.html"; // Ensures correct navigation
       });
@@ -137,7 +141,7 @@
                             <a href="about.html" class="nav-item nav-link"   id="about-link">About</a>
                             <a href="admissions.html" class="nav-item nav-link"  id="admissions-link">Programs</a>
                             <a href="events.html" class="nav-item nav-link"   id="events-link">Events</a>
-                            <a href="news.html" class="nav-item nav-link"   id="events-link">News</a>
+                            <a href="news.html" class="nav-item nav-link"   id="news-link">News</a>
                             <!-- <a href="teacher.html" class="nav-item nav-link">Teachers</a> -->
                             <div class="nav-item dropdown">
                                 <a href="gallery.html" class="nav-link" id="gallery-link">Gallery</a>
@@ -694,125 +698,139 @@
 
 
 <!-- Testimonials Section -->
-<section class="testimonial-section">
+<section class="testimonial-section" aria-label="Client testimonials">
     <div class="container">
         <div class="section-header">
             <h5 class="subtitle">Testimonials</h5>
             <h2 class="title">What Our Clients Say</h2>
+            <p class="section-description">Hear from our valued partners and clients about their experiences</p>
         </div>
-        
-        <!-- CSS-only Carousel -->
+                
+        <!-- Enhanced Carousel -->
         <div class="carousel-container">
-            <div class="carousel-track">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="testimonial-text">الحمد لله والصلاة والسلام على رسول الله واله وصحبه ومن والاه، أما بعد: 
-فقد تشرفت بتلقي دعوة كريمة من جامعة نجم الهدى الاسلامية بمنجيري مقاطعة مالابورم ولاية كيرلا الهند لتقديم دورة في مهارات اكتساب اللغة العربية وقد لمست منهم الاتي: 
-
- الحرص الشديد على التعلم وافادة الطلاب في مجالاتهم الدراسية. 
-. كرم منقطع النظير يتجلى في تعاملهم وحرصهم على جلب أفضل المأكولات والمشروبات 
-. حسن التعامل والذوق الرفيع الذي يتميزون به. 
- الحرص على نظافة جامعتهم ومرفقاتها. 
-. توفير الأجهزة اللازمة للبيئة التعليمية. 
- سكن الضيوف ممتاز ومناسب. 
- حرص الطلاب على الاستفادة وتعاملهم الحسن مع الضيف. 
- الاهتمام البالغ بي منذو التنسيق الى عودتي الى منزلي وحرص ادارة الجامعة ومنتسبيها على تقديم أفضل الخدمات. 
-. حرص المعلمين على الاستفادة.
- تفاعل الجميع مع البرنامج الذي تم تقديمه. 
-
-وكل ما ذكرته فيض من غيض كما يقال فشكري أوجهه للجميع وأخص بالشكر مدير الجامعة الشيخ محمد مزمل والشيخ عبدالرحيم ورئيس الجامعة وكل طاقم التدريس بلا استثناء وقد كانت فرصة طيبة لنا معكم.</p>
-                        <div class="testimonial-meta">
-                            <h4 class="testimonial-name">أ.  عبدالله مطهر. اليمني </h4>
-                            <p class="testimonial-designation">  </p>
+            <div class="carousel-viewport">
+                <div class="carousel-track" role="list">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item" role="listitem">
+                        <div class="testimonial-content">
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="testimonial-text-wrapper">
+                                <p class="testimonial-text">الحمد لله والصلاة والسلام على رسول الله واله وصحبه ومن والاه، أما بعد: فقد تشرفت بتلقي دعوة كريمة من جامعة نجم الهدى الاسلامية بمنجيري مقاطعة مالابورم ولاية كيرلا الهند لتقديم دورة في مهارات اكتساب اللغة العربية وقد لمست منهم الاتي: الحرص الشديد على التعلم وافادة الطلاب في مجالاتهم الدراسية. كرم منقطع النظير يتجلى في تعاملهم وحرصهم على جلب أفضل المأكولات والمشروبات. حسن التعامل والذوق الرفيع الذي يتميزون به. الحرص على نظافة جامعتهم ومرفقاتها. توفير الأجهزة اللازمة للبيئة التعليمية. سكن الضيوف ممتاز ومناسب. حرص الطلاب على الاستفادة وتعاملهم الحسن مع الضيف. الاهتمام البالغ بي منذو التنسيق الى عودتي الى منزلي وحرص ادارة الجامعة ومنتسبيها على تقديم أفضل الخدمات. حرص المعلمين على الاستفادة. تفاعل الجميع مع البرنامج الذي تم تقديمه. وكل ما ذكرته فيض من غيض كما يقال فشكري أوجهه للجميع وأخص بالشكر مدير الجامعة الشيخ محمد مزمل والشيخ عبدالرحيم ورئيس الجامعة وكل طاقم التدريس بلا استثناء وقد كانت فرصة طيبة لنا معكم.</p>
+                            </div>
+                            <div class="testimonial-meta">
+                                <div class="client-info">
+                                    <h4 class="testimonial-name">أ. عبدالله مطهر. اليمني</h4>
+                                    <p class="testimonial-designation">مدرس اللغة العربية</p>
+                                </div>
+                                <!-- <div class="client-rating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <span class="sr-only">5 star rating</span>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="testimonial-text">الحمد لله الذي وفقني لزيارة جامعة نجم الهدى الاسلامية، تلك الجامعة العريقة التي لها دور فعال في إيقاظ الوعي الاسلامي وتبليغ الرسالة الخالدة إلى الأنحاء وفيها دراسة إلى دورة الحديث النبوي الشريف وقسم الإفتاء في الفقه الشّافعي وهذه ميزتها الجميلة، 
-وهي تربّي الطّلّاب على الكتاب والسّنّة وتعلّمهم الكتاب والحكمة. 
-
-فأدعوا الله سبحانه وتعالى أن يحفظ هذه الجامعة ويرقيها ترقيه فائقة ويتقبلها قبولا حسنا ويوفق المسلمين  أن يقدروا قدرها ويجعل في اساتذتها وطلابها بها الإخلاص والجهد البليغ في الإنذار والتعليم يا أرحم الرّاحمين، وصلى الله على النبي الكريم وعلى اله وصحبه أجمعين.</p>
-                        <div class="testimonial-meta">
-                            <h4 class="testimonial-name"> عثمان غني</h4>
-                            <p class="testimonial-designation"> أستاذ بدار العلوم ديو بند </p>
+                                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item" role="listitem">
+                        <div class="testimonial-content">
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="testimonial-text-wrapper">
+                                <p class="testimonial-text">الحمد لله الذي وفقني لزيارة جامعة نجم الهدى الاسلامية، تلك الجامعة العريقة التي لها دور فعال في إيقاظ الوعي الاسلامي وتبليغ الرسالة الخالدة إلى الأنحاء وفيها دراسة إلى دورة الحديث النبوي الشريف وقسم الإفتاء في الفقه الشّافعي وهذه ميزتها الجميلة، وهي تربّي الطّلّاب على الكتاب والسّنّة وتعلّمهم الكتاب والحكمة. فأدعوا الله سبحانه وتعالى أن يحفظ هذه الجامعة ويرقيها ترقيه فائقة ويتقبلها قبولا حسنا ويوفق المسلمين أن يقدروا قدرها ويجعل في اساتذتها وطلابها بها الإخلاص والجهد البليغ في الإنذار والتعليم يا أرحم الرّاحمين، وصلى الله على النبي الكريم وعلى اله وصحبه أجمعين.</p>
+                            </div>
+                            <div class="testimonial-meta">
+                                <div class="client-info">
+                                    <h4 class="testimonial-name">عثمان غني</h4>
+                                    <p class="testimonial-designation">أستاذ بدار العلوم ديو بند</p>
+                                </div>
+                                <!-- <div class="client-rating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                    <span class="sr-only">4.5 star rating</span>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="testimonial-text">Alhamdulillah, Allah blessed to visit Najmul  Huda on 6th November 2023. I don't have anything to say except praying Allah Almighty to bless those who are behind this noble venture, with the garden of Paradise, Ameen.</p>
-                        <div class="testimonial-meta">
-                            <h4 class="testimonial-name">MM. Akbar </h4>
-                            <p class="testimonial-designation"> </p>
+                                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item" role="listitem">
+                        <div class="testimonial-content">
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="testimonial-text-wrapper">
+                                <p class="testimonial-text">Alhamdulillah, Allah blessed to visit Najmul Huda on 6th November 2023. I don't have anything to say except praying Allah Almighty to bless those who are behind this noble venture, with the garden of Paradise, Ameen.</p>
+                            </div>
+                            <div class="testimonial-meta">
+                                <div class="client-info">
+                                    <h4 class="testimonial-name">MM. Akbar</h4>
+                                    <p class="testimonial-designation">Education Consultant</p>
+                                </div>
+                                <!-- <div class="client-rating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <span class="sr-only">5 star rating</span>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Testimonial 4 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="testimonial-text">بسم الله الرحمن الرحيم 
-ولله الحمد أولا وآخرا، بفضل منه وتوفيقه قد زرت الجامعة نجم الهدى الإسلامية بمنجيري بمحافظة كيرالا في الهند لفترة وجيزة. 
-وخلال هذه الفترة -ولله الحمد والمنة- قد أقمنا دورة تدريبية في تنمية مهارات اللغة العربية وتحقيق الأهداف، فوجدنا الطلاب متحمسين، وكانت عندهم رغبة مشتعلة في طلب العلم.
-ونسأل الله أن يبارك في سعيهم ويجعلهم علماء ودعاة إليه وإلى رسوله، لا يشوبه الرياء ولا السمعة.
-ونشكر المؤسسة والقائمين عليها لكريم ضيافتهم وتفضلهم وإكرامهم بي منذ ثلاثة أيام، وقد وفروا لي كل ما أحتاج إليه، ولم يقصروا في أي حق من الحقوق...
-ونتمنى لهذه الجامعة مستقبلا باهرا وندعو لهم بالبركة والعافية والسلامة، ونشكركم أولا وآخرا،</p>
-                        <div class="testimonial-meta">
-                            <h4 class="testimonial-name">أخوكم في الدين: محمد صومي كريم الرشادي  </h4>
-                            <p class="testimonial-designation">أستاذ بدار العلوم ديو بند</p>
-                        </div>
-                    </div>
-                </div>
-                                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="testimonial-text">الحمد لله والصلاة والسلام على رسول الله واله وصحبه ومن والاه، أما بعد: 
-فقد تشرفت بتلقي دعوة كريمة من جامعة نجم الهدى الاسلامية بمنجيري مقاطعة مالابورم ولاية كيرلا الهند لتقديم دورة في مهارات اكتساب اللغة العربية وقد لمست منهم الاتي: 
-
- الحرص الشديد على التعلم وافادة الطلاب في مجالاتهم الدراسية. 
-. كرم منقطع النظير يتجلى في تعاملهم وحرصهم على جلب أفضل المأكولات والمشروبات 
-. حسن التعامل والذوق الرفيع الذي يتميزون به. 
- الحرص على نظافة جامعتهم ومرفقاتها. 
-. توفير الأجهزة اللازمة للبيئة التعليمية. 
- سكن الضيوف ممتاز ومناسب. 
- حرص الطلاب على الاستفادة وتعاملهم الحسن مع الضيف. 
- الاهتمام البالغ بي منذو التنسيق الى عودتي الى منزلي وحرص ادارة الجامعة ومنتسبيها على تقديم أفضل الخدمات. 
-. حرص المعلمين على الاستفادة.
- تفاعل الجميع مع البرنامج الذي تم تقديمه. 
-
-وكل ما ذكرته فيض من غيض كما يقال فشكري أوجهه للجميع وأخص بالشكر مدير الجامعة الشيخ محمد مزمل والشيخ عبدالرحيم ورئيس الجامعة وكل طاقم التدريس بلا استثناء وقد كانت فرصة طيبة لنا معكم.</p>
-                        <div class="testimonial-meta">
-                            <h4 class="testimonial-name">أ.  عبدالله مطهر. اليمني </h4>
-                            <p class="testimonial-designation">  </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="testimonial-text">الحمد لله الذي وفقني لزيارة جامعة نجم الهدى الاسلامية، تلك الجامعة العريقة التي لها دور فعال في إيقاظ الوعي الاسلامي وتبليغ الرسالة الخالدة إلى الأنحاء وفيها دراسة إلى دورة الحديث النبوي الشريف وقسم الإفتاء في الفقه الشّافعي وهذه ميزتها الجميلة، 
-وهي تربّي الطّلّاب على الكتاب والسّنّة وتعلّمهم الكتاب والحكمة. 
-
-فأدعوا الله سبحانه وتعالى أن يحفظ هذه الجامعة ويرقيها ترقيه فائقة ويتقبلها قبولا حسنا ويوفق المسلمين  أن يقدروا قدرها ويجعل في اساتذتها وطلابها بها الإخلاص والجهد البليغ في الإنذار والتعليم يا أرحم الرّاحمين، وصلى الله على النبي الكريم وعلى اله وصحبه أجمعين.</p>
-                        <div class="testimonial-meta">
-                            <h4 class="testimonial-name"> عثمان غني</h4>
-                            <p class="testimonial-designation"> أستاذ بدار العلوم ديو بند </p>
+                                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-item" role="listitem">
+                        <div class="testimonial-content">
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="testimonial-text-wrapper">
+                                <p class="testimonial-text">بسم الله الرحمن الرحيم ولله الحمد أولا وآخرا، بفضل منه وتوفيقه قد زرت الجامعة نجم الهدى الإسلامية بمنجيري بمحافظة كيرالا في الهند لفترة وجيزة. وخلال هذه الفترة -ولله الحمد والمنة- قد أقمنا دورة تدريبية في تنمية مهارات اللغة العربية وتحقيق الأهداف، فوجدنا الطلاب متحمسين، وكانت عندهم رغبة مشتعلة في طلب العلم. ونسأل الله أن يبارك في سعيهم ويجعلهم علماء ودعاة إليه وإلى رسوله، لا يشوبه الرياء ولا السمعة. ونشكر المؤسسة والقائمين عليها لكريم ضيافتهم وتفضلهم وإكرامهم بي منذ ثلاثة أيام، وقد وفروا لي كل ما أحتاج إليه، ولم يقصروا في أي حق من الحقوق... ونتمنى لهذه الجامعة مستقبلا باهرا وندعو لهم بالبركة والعافية والسلامة، ونشكركم أولا وآخرا،</p>
+                            </div>
+                            <div class="testimonial-meta">
+                                <div class="client-info">
+                                    <h4 class="testimonial-name">محمد صومي كريم الرشادي</h4>
+                                    <p class="testimonial-designation">أستاذ بدار العلوم ديو بند</p>
+                                </div>
+                                <!-- <div class="client-rating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="far fa-star" aria-hidden="true"></i>
+                                    <span class="sr-only">4 star rating</span>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <button class="carousel-btn prev-btn" aria-label="Previous testimonial">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            
+            <button class="carousel-btn next-btn" aria-label="Next testimonial">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators" role="tablist">
+            <button class="indicator active" aria-label="Go to testimonial 1" aria-selected="true" role="tab"></button>
+            <button class="indicator" aria-label="Go to testimonial 2" aria-selected="false" role="tab"></button>
+            <button class="indicator" aria-label="Go to testimonial 3" aria-selected="false" role="tab"></button>
+            <button class="indicator" aria-label="Go to testimonial 4" aria-selected="false" role="tab"></button>
         </div>
     </div>
 </section>
@@ -822,11 +840,22 @@
 
 <style>
     /* Testimonial Section Styles */
+    :root {
+        --primary-color: #4a6fdc;
+        --primary-hover: #3a5bc7;
+        --text-dark: #2c3e50;
+        --text-medium: #555;
+        --text-light: #6c757d;
+        --bg-light: #f8f9fa;
+        --bg-white: #fff8ea;
+        --shadow: 0 0 10px 0px rgba(85, 85, 85, 0.616);
+        --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    
     .testimonial-section {
-        background-color: #f8fafc;
-        padding: 80px 0;
+        background-color: var(--bg-light);
+        padding: 100px 0;
         position: relative;
-        overflow: hidden;
     }
     
     .container {
@@ -838,129 +867,229 @@
     
     .section-header {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
     
     .section-header .subtitle {
-        color: #4e73df;
+        color: var(--primary-color);
         text-transform: uppercase;
         letter-spacing: 3px;
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 15px;
         display: inline-block;
+        position: relative;
+    }
+    
+    .section-header .subtitle::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background: var(--primary-color);
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .section-header .title {
         font-weight: 700;
-        color: #2c3e50;
-        font-size: clamp(28px, 5vw, 36px);
-        margin: 0;
+        color: var(--text-dark);
+        font-size: clamp(32px, 5vw, 42px);
+        margin: 15px 0;
         line-height: 1.3;
     }
     
-    /* CSS Carousel */
+    .section-header .section-description {
+        color: var(--text-medium);
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    /* Enhanced Carousel */
     .carousel-container {
         width: 100%;
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
-        overflow: hidden;
         position: relative;
+    }
+    
+    .carousel-viewport {
+        width: 100%;
+        overflow: hidden;
     }
     
     .carousel-track {
         display: flex;
-        width: calc(100% * 6); /* Number of items */
-        animation: scroll 80s linear infinite; /* Slowed from 30s to 60s */
-    }
-    
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-100% / 6 * 5)); } /* Move by (number of items - 1) */
+        transition: transform 0.6s ease;
+        will-change: transform;
     }
     
     .testimonial-item {
-        width: calc(100% / 6); /* Number of items */
-        flex-shrink: 0;
+        min-width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
-        transition: transform 0.3s ease;
-    }
-    
-    .testimonial-item:hover {
-        transform: scale(1.02);
     }
     
     .testimonial-content {
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        padding: 40px;
+        background: var(--bg-white);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        padding: 50px;
         height: 100%;
         position: relative;
-        text-align: center;
         display: flex;
         flex-direction: column;
-        transition: all 0.3s ease;
+        transition: var(--transition);
     }
     
-    .testimonial-content:hover {
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    .quote-icon-wrapper {
+        margin-bottom: 25px;
     }
     
     .quote-icon {
-        color: #4e73df;
-        font-size: 28px;
-        opacity: 0.2;
-        margin-bottom: 20px;
-        display: inline-block;
+        color: var(--primary-color);
+        font-size: 36px;
+        opacity: 0.15;
+    }
+    
+    .testimonial-text-wrapper {
+        flex-grow: 1;
+        margin-bottom: 30px;
     }
     
     .testimonial-text {
-        font-style: italic;
-        color: #555;
-        line-height: 1.7;
-        font-size: 16px;
-        margin: 0 0 25px 0;
+        color: var(--text-medium);
+        line-height: 1.8;
+        font-size: 18px;
+        margin: 0;
+        position: relative;
     }
     
     .testimonial-meta {
-        text-align: center;
-        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .client-info {
+        text-align: left;
     }
     
     .testimonial-name {
         font-weight: 700;
-        color: #2c3e50;
+        color: var(--text-dark);
         margin-bottom: 5px;
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .testimonial-designation {
-        color: #6c757d;
-        font-size: 15px;
+        color: var(--text-light);
+        font-size: 16px;
         font-weight: 500;
     }
     
-    /* Pause animation on hover */
-    .carousel-container:hover .carousel-track {
-        animation-play-state: paused;
+    .client-rating {
+        color: #ffc107;
+        font-size: 18px;
+    }
+    
+    /* Navigation Buttons */
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--bg-white);
+        border: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+        font-size: 18px;
+        transition: var(--transition);
+    }
+    
+    .carousel-btn:hover {
+        background: var(--primary-color);
+        color: var(--bg-white);
+        transform: translateY(-50%) scale(1.1);
+    }
+    
+    .carousel-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(74, 111, 220, 0.3);
+    }
+    
+    .prev-btn {
+        left: -25px;
+    }
+    
+    .next-btn {
+        right: -25px;
+    }
+    
+    /* Indicators */
+    .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 12px;
+    }
+    
+    .indicator {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #d1d5db;
+        border: none;
+        cursor: pointer;
+        transition: var(--transition);
+        padding: 0;
+    }
+    
+    .indicator.active {
+        background: var(--primary-color);
+        transform: scale(1.2);
+    }
+    
+    .indicator:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(74, 111, 220, 0.3);
+    }
+    
+    /* Accessibility */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
     }
     
     /* Responsive Design */
     @media (max-width: 992px) {
-        .carousel-track {
-            width: calc(100% * 3); /* Show 2 items at a time */
-            animation: scroll 80s linear infinite; /* Slowed from 20s to 40s */
+        .testimonial-section {
+            padding: 80px 0;
         }
         
-        .testimonial-item {
-            width: calc(100% / 3);
+        .testimonial-content {
+            padding: 40px;
         }
         
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-100% / 3 * 2)); }
+        .testimonial-text {
+            font-size: 17px;
         }
     }
     
@@ -969,43 +1098,220 @@
             padding: 60px 0;
         }
         
-        .carousel-track {
-            width: calc(100% * 2); /* Show 1 item at a time */
-            animation: scroll 70s linear infinite; /* Slowed from 15s to 30s */
-        }
-        
-        .testimonial-item {
-            width: calc(100% / 2);
-        }
-        
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-100% / 2 * 1)); }
+        .section-header {
+            margin-bottom: 40px;
         }
         
         .testimonial-content {
             padding: 30px;
         }
+        
+        .testimonial-text {
+            font-size: 16px;
+        }
+        
+        .testimonial-name {
+            font-size: 18px;
+        }
+        
+        .testimonial-designation {
+            font-size: 15px;
+        }
+        
+        .carousel-btn {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+        
+        .prev-btn {
+            left: -15px;
+        }
+        
+        .next-btn {
+            right: -15px;
+        }
     }
-
-    @media (max-width: 480px) {
+    
+    @media (max-width: 576px) {
         .testimonial-content {
             padding: 25px;
         }
         
-        .testimonial-text {
-            font-size: 15px;
+        .testimonial-meta {
+            flex-direction: column;
+            align-items: flex-start;
         }
         
-        .testimonial-name {
-            font-size: 16px;
+        .client-rating {
+            margin-top: 10px;
         }
         
-        .testimonial-designation {
-            font-size: 14px;
+        .carousel-indicators {
+            margin-top: 30px;
         }
     }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const items = document.querySelectorAll('.testimonial-item');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const indicators = document.querySelectorAll('.indicator');
+        let currentIndex = 0;
+        let autoScrollInterval;
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
+        
+        // Set initial position
+        function setPositionByIndex() {
+            currentTranslate = currentIndex * -items[0].offsetWidth;
+            prevTranslate = currentTranslate;
+            track.style.transform = `translateX(${currentTranslate}px)`;
+            updateIndicators();
+        }
+        
+        // Update indicators
+        function updateIndicators() {
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+                indicator.setAttribute('aria-selected', index === currentIndex);
+            });
+        }
+        
+        // Go to specific slide
+        function goToSlide(index) {
+            if (index < 0) index = items.length - 1;
+            if (index >= items.length) index = 0;
+            
+            currentIndex = index;
+            setPositionByIndex();
+            resetAutoScroll();
+        }
+        
+        // Navigation functions
+        function nextSlide() {
+            goToSlide(currentIndex + 1);
+        }
+        
+        function prevSlide() {
+            goToSlide(currentIndex - 1);
+        }
+        
+        // Auto-scroll functionality
+        function startAutoScroll() {
+            autoScrollInterval = setInterval(nextSlide, 6000);
+        }
+        
+        function resetAutoScroll() {
+            clearInterval(autoScrollInterval);
+            startAutoScroll();
+        }
+        
+        // Touch events for mobile
+        function touchStart(index) {
+            return function(e) {
+                isDragging = true;
+                startPos = getPositionX(e);
+                currentIndex = index;
+                animationID = requestAnimationFrame(animation);
+                track.style.cursor = 'grabbing';
+                track.style.transition = 'none';
+                clearInterval(autoScrollInterval);
+            }
+        }
+        
+        function touchMove(e) {
+            if (!isDragging) return;
+            const currentPosition = getPositionX(e);
+            currentTranslate = prevTranslate + currentPosition - startPos;
+        }
+        
+        function touchEnd() {
+            if (!isDragging) return;
+            cancelAnimationFrame(animationID);
+            isDragging = false;
+            
+            const movedBy = currentTranslate - prevTranslate;
+            if (movedBy < -100 && currentIndex < items.length - 1) {
+                currentIndex += 1;
+            }
+            
+            if (movedBy > 100 && currentIndex > 0) {
+                currentIndex -= 1;
+            }
+            
+            setPositionByIndex();
+            track.style.cursor = 'grab';
+            track.style.transition = 'transform 0.6s ease';
+            resetAutoScroll();
+        }
+        
+        function getPositionX(e) {
+            return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+        }
+        
+        function animation() {
+            track.style.transform = `translateX(${currentTranslate}px)`;
+            if (isDragging) requestAnimationFrame(animation);
+        }
+        
+        // Event listeners
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+        
+        // Indicator click events
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => goToSlide(index));
+            
+            // Touch events for indicators
+            indicator.addEventListener('touchstart', touchStart(index), { passive: true });
+        });
+        
+        // Mouse and touch events for carousel
+        track.addEventListener('mousedown', touchStart(currentIndex));
+        track.addEventListener('touchstart', touchStart(currentIndex), { passive: true });
+        
+        window.addEventListener('mousemove', touchMove);
+        window.addEventListener('touchmove', touchMove, { passive: false });
+        
+        window.addEventListener('mouseup', touchEnd);
+        window.addEventListener('touchend', touchEnd);
+        
+        // Prevent window scroll on touch move
+        track.addEventListener('touchmove', (e) => {
+            if (isDragging) e.preventDefault();
+        }, { passive: false });
+        
+        // Initialize
+        setPositionByIndex();
+        startAutoScroll();
+        
+        // Pause auto-scroll when hovering
+        track.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+        track.addEventListener('mouseleave', resetAutoScroll);
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            setPositionByIndex();
+        });
+    });
+</script>
+
 
 
 
